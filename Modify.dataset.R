@@ -19,7 +19,7 @@ df<-StudDataset[ , -c(1,ncol(StudDataset))]
  #change name of coumns
  names(df) <- c("age", "height", "country", "city", "roommate", "travel", "km_travel", "stat_knowledge", "hours_stud", "use_project", "use_R", "R_confidence", "course_exc")
 
- #clean th data
+ #clean the data
 
  df$height
 
@@ -44,10 +44,10 @@ df<-StudDataset[ , -c(1,ncol(StudDataset))]
  #roommate
  df$roommate[df$roommate>10]<-NA
  
- 
+ # columns from 6 to 10
  df[,6:10]
  
- ## km_travel
+ # km_travel
  class( df$km_travel)
  as.numeric( df$km_travel)
  
